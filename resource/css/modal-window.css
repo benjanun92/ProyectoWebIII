@@ -1,0 +1,46 @@
+﻿.modal-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #131313;
+	opacity: .85;
+	filter: alpha(opacity=85);
+	z-index: 101;
+}
+.modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    z-index: 102;
+    background: #fff;
+    border: solid 4px #0072C6;
+    width: 450px;
+    height: 500px;
+    margin-top: -250px;  /* Centra el modal verticalmente */
+    margin-left: -225px; /* Centra el modal horizontalmente */
+    overflow: hidden;    /* Impide que el contenido del modal se desborde */
+}
+.close-window {
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	right: -23px;
+	top: -23px;
+	background: transparent url(../Iconos/close-button.png) no-repeat scroll right top;
+	text-indent: -99999px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.modal-window .modal-content {
+    max-height: 450px; /* Ajusta el contenido a la altura del modal */
+    overflow-y: auto;  /* Muestra un scrollbar solo si el contenido excede */
+    padding: 10px;     /* Asegúrate de tener algo de espacio dentro del modal */
+}
